@@ -1,0 +1,14 @@
+{
+  "name": "anamnesis-angular-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start-server": "pnpm --filter backend dev",
+    "start-client": "pnpm --filter frontend start",
+    "dev": "concurrently \"npm run start-server\" \"npm run start-client\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "concurrently": "^9.2.1"
+  }
+}
